@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE family SYSTEM "F:\ITI\XML\Day1\Practice_LAB1\New folder\dtd2.dtd">
+<family>
+	<grandfather name="" age="">
+		<doughter name="" age="">
+		<doughterJob></doughterJob>
+		<husband></husband>
+		<doughterChild></doughterChild>
+		</doughter>
+		<son name="" age="">
+		<sonJob></sonJob>
+		<wife></wife>		
+		<sonChild></sonChild>
+		</son>
+	</grandfather>
+	<grandmother name="" age="">
+		<doughter name="" age="">
+		<doughterJob></doughterJob>
+		<husband></husband>
+		<doughterChild></doughterChild>
+		</doughter>
+		<son name="" age="">
+		<sonJob></sonJob>
+		<wife></wife>		
+		<sonChild></sonChild>
+		</son>
+	</grandmother>
+</family>

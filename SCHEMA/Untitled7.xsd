@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="TraineeAffairs">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="trainee" minOccurs="1" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="trainee">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Address" minOccurs="1" maxOccurs="1"/>
+				<xs:element ref="Phone" minOccurs="1" maxOccurs="unbounded"/>
+				<xs:element ref="CourseResult" minOccurs="1" maxOccurs="1"/>
+			</xs:sequence>
+		<xs:attribute name="name" type="xs:string" use="required"/>	
+		<xs:attribute name="age" type="xs:intger" use="required"/>
+		<xs:attribute ref="group" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Address">
+		<xs:complexType>
+			<xs:attribute name="Governorate" type="xs:string" use="required"/>	
+			<xs:attribute name="street" type="xs:string" use="required"/>	
+			<xs:attribute name="zipcode" type="xs:intger" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Phone" type="xs:string"/>
+	<xs:element name="CourseResult">
+		<xs:complexType>
+			<xs:attribute name="CourseName" type="xs:string" use="required"/>	
+			<xs:attribute ref="TraineeGrade" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attribute name="group">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="group1"/>
+				<xs:enumeration value="group2"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	
+	<xs:attribute name="TraineeGrade">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="A"/>
+				<xs:enumeration value="B"/>
+				<xs:enumeration value="C"/>
+				<xs:enumeration value="D"/>
+				<xs:enumeration value="E"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+</xs:schema>

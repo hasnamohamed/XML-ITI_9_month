@@ -1,0 +1,23 @@
+<!ELEMENT family (grandfather,grandmother)>
+<!ELEMENT grandfather (doughter+ ,son+)>
+<!ELEMENT grandmother (doughter+, son+)>
+<!ATTLIST grandfather name CDATA #REQUIRED age CDATA #REQUIRED>
+<!ATTLIST grandmother name CDATA #REQUIRED age CDATA #REQUIRED>
+<!ATTLIST son name CDATA #REQUIRED age CDATA #REQUIRED>
+<!ATTLIST doughter name CDATA #REQUIRED age CDATA #REQUIRED>
+<!ELEMENT son (sonJob?, wife?, sonChild*)>
+<!ELEMENT sonJob (#PCDATA) >
+<!ELEMENT sonChild (#PCDATA)>
+<!ELEMENT wife (#PCDATA)>
+<!ELEMENT doughter (doughterJob?, husband?, doughterChild*)>
+<!ELEMENT doughterJob (#PCDATA) >
+<!ELEMENT husband (#PCDATA)>
+<!ELEMENT doughterChild (#PCDATA)>
+
+<!ATTLIST wife name CDATA #IMPLIED >
+<!ATTLIST husband name CDATA #IMPLIED>
+<!ATTLIST doughterChild name CDATA #IMPLIED >
+<!ATTLIST sonJob name CDATA #IMPLIED >
+<!ATTLIST doughterJob name CDATA #IMPLIED >
+<!ATTLIST sonChild name CDATA #IMPLIED >
+

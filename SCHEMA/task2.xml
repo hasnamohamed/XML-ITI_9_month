@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<family xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///F:/ITI/XML/Day2/Assigment/task2.xsd">
+	<grandfather><father>
+		<mother></mother>
+		<daughter></daughter>
+		<son></son>
+	</father><uncle></uncle><aunt></aunt>
+		<aunt/>
+	</grandfather>
+</family>

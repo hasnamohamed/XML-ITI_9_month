@@ -1,0 +1,12 @@
+<!ELEMENT ITI (trainee)+ >
+<!ELEMENT trainee (address, phone+, courseResult+)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT courseResult (#PCDATA)>
+<!ATTLIST trainee name CDATA #REQUIRED>
+<!ATTLIST trainee age CDATA #REQUIRED>
+<!ATTLIST address governorate CDATA #REQUIRED street CDATA #IMPLIED zip CDATA #IMPLIED>
+ <!ATTLIST trainee group (group1|group2) #REQUIRED>
+ 
+ <!ATTLIST course-result course_name CDATA #REQUIRED>
+ <!ATTLIST course-result trainee_grade (A | B | C | D | E) #REQUIRED>
